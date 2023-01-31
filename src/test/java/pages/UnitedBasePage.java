@@ -11,12 +11,8 @@ public class UnitedBasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = "button[class*='menuButton']")
-    public WebElement mainMenuButton;
 
-    public void mainMenuClick(){
-        mainMenuButton.click();
-    }
+
 
 
 

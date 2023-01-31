@@ -17,14 +17,14 @@ public class UnitedBase {
 
 
     @BeforeMethod
-    public void setUp(){
+    public void setup(){
         driver = Driver.getDriver();
-        unitedBasePage = new UnitedBasePage();
         driver.get(ConfigReader.getProperty("appURL"));
+        unitedBasePage = new UnitedBasePage();
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void teardown(){
         Driver.quitDriver();
     }
 
